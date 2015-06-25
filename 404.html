@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><title>Richard Mitic</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="keywords" content="css, library, css library, picnic, picnicss, html, html5, light, plugin"><meta name="description" content="A lighweight CSS library with nice defaults and many plugins to kickstart your projects"><meta property="og:image" content="http://www.picnicss.com/preview.png"><link rel="stylesheet" href="/style/style.min.css"><link rel="icon" href="/img/basket.png" type="image/png"></head><body><nav><a href="/" class="brand">Richard Mitic</a><!-- responsiveness--><input id="bmenu" type="checkbox" class="show"><label for="bmenu" class="burger toggle pseudo button">menu</label><div class="menu"><a href="music.html" class="pseudo button icon-wave">Music</a><a href="video.html" class="pseudo button icon-video">Video</a><a href="https://github.com/richardmitic" target="_blank" class="pseudo button icon-g">Code</a></div></nav><main><h1>404 Not Found</h1><a href="/" class="button">Go back home</a></main><script>window.onload = function(){
+
+  // Dropimage handler
+  [].forEach.call(document.querySelectorAll('.dropimage'), function(img){
+    img.onchange = function(e){
+      var inputfile = this, reader = new FileReader();
+      reader.onloadend = function(){
+        inputfile.style['background-image'] = 'url('+reader.result+')';
+        }
+      reader.readAsDataURL(e.target.files[0]);
+      }
+    });
+  };
+</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-59832845-1', 'auto');
+ga('send', 'pageview');</script></body></html>
