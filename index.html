@@ -1,28 +1,21 @@
-<!DOCTYPE html><html><head><title>Richard Mitic</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="keywords" content="audio, video, digital, art, code"><meta name="description" content="A small collection of projects"><link rel="stylesheet" href="/style/style.min.css"><link rel="icon" href="/img/basket.png" type="image/png"></head><body><nav><a href="/" class="brand">Richard Mitic</a><!-- responsiveness--><input id="bmenu" type="checkbox" class="show"><label for="bmenu" class="burger toggle pseudo button">menu</label><div class="menu"><a href="music.html" class="pseudo button icon-wave">Music</a><a href="video.html" class="pseudo button icon-video">Video</a><a href="https://github.com/richardmitic" target="_blank" class="pseudo button icon-g">Code</a></div></nav><main><header class="hero"><div class="content"><h1>Richard Mitic</h1><p class="slogan">Digital art and code</p></div><div class="keepgoing">Keep going<br>▼</div></header>
-</main>
+<html>
 
+	<head>
+	<style>
+		h1 { font-size: 6em; }
+		p { font-size: 4em; }
+		.tc { text-align: center; }
+	</style>
+	</head>
 
+	<body>
+		<main>
+			<h1 class='tc' > Richard Mitic </h1>
+			<p class='tc' ><a href='https://github.com/richardmitic'> github </a></p>
+			<p class='tc' ><a href='https://open.spotify.com/user/9829599'> spotify </a></p>
+			<p class='tc' ><a href='https://soundcloud.com/richardmitic'> soundcloud </a></p>
+		</main>
+	</body>
 
+</html>
 
-
-
-<script>// Transparent nav handler
-var nav = document.querySelector('nav');
-function navScroll(){
-  var className = 'transparent';
-  var top = window.scrollY ? window.scrollY : document.documentElement.scrollTop;
-  if (top > 0) {
-    if (nav.classList)
-      nav.classList.remove(className);
-    else
-      nav.className = nav.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-    }
-  else {
-    if (nav.classList)
-      nav.classList.add(className);
-    else
-      nav.className += ' ' + className;
-    }
-  };
-window.onscroll = navScroll;
-navScroll();</script></body></html>
