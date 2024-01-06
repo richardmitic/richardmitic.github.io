@@ -2,18 +2,49 @@
 
 	<head>
 	<style>
-		h1 { font-size: 6em; }
-		p { font-size: 4em; }
-		.tc { text-align: center; }
+		html {
+			font-family: "SF Pro Display",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Helvetica","Arial",sans-serif;
+			font-weight:200;
+		}
+		h1 { font-size: 6vw; }
+		.tagline {
+			font-size: 2vw;
+		}
+		.tc {
+			font-size: 3vw;
+		}
+		.centre {
+			text-align: center;
+			padding-left: 19.1vw;
+			padding-right: 19.1vw;
+		}
+		@media only screen and (max-width: 1000px) {
+			h1 {
+				font-size: 10vw;
+				padding-top: 5vw;
+			}
+			.tagline { font-size: 4vw; }
+			.tc { font-size: 6vw; }
+			.centre {
+				text-align: center;
+				padding-left: 5vw;
+				padding-right: 5vw;
+			}
+		}
 	</style>
 	</head>
 
 	<body>
 		<main>
-			<h1 class='tc' > Richard Mitic </h1>
-			<p class='tc' ><a href='https://github.com/richardmitic'> github </a></p>
-			<p class='tc' ><a href='https://open.spotify.com/user/9829599'> spotify </a></p>
-			<p class='tc' ><a href='https://soundcloud.com/richardmitic'> soundcloud </a></p>
+			<div class='centre'>
+				<h1 > Richard Mitic </h1>
+				<p class='tagline'> Senior engineer and researcher based in Stockholm, Sweden </p>
+				<p class='tagline'> I specialise in audio, signal processing, embedded programming, streaming media, and sarcasm</p>
+				<p class='tc' ><a href='https://github.com/richardmitic'> code </a></p>
+				<!-- <p class='tc' ><a href='https://open.spotify.com/user/9829599'> spotify </a></p> -->
+				<p class='tc' ><a href='https://soundcloud.com/richardmitic'> music </a></p>
+				<p class='tc' ><a href='https://www.linkedin.com/in/richard-m-7b08386b/'> work </a></p>
+			</div>
 		</main>
 	</body>
 
